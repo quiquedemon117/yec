@@ -1,0 +1,90 @@
+.caja-redes {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+.caja-redes a {
+	text-align: center;
+
+}
+.icon-button {
+	background-color: white;
+	border-radius: 3em;
+	cursor: pointer;
+	display: inline-block;
+	height: 3em;
+	line-height: 3em;
+	margin: 0 2px;
+	position: relative;
+	width: 3em;
+}
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 3em;
+	height: 3em;
+	border-radius: 3em;
+	margin: -1.5em;
+}
+.blogger2 span {
+	background-color: #ff6600;
+}
+.youtube span {
+	background-color: #CC181E;
+}
+.twitter span {
+	background-color: #5EA9DD;
+}
+.facebook span {
+	background-color: #3A5795;
+}
+.google-plus span {
+	background-color: #C30907;
+}
+/* Iconos */
+.icon-button i {
+	background: none;
+	color: white;
+	left: 0;
+	line-height: 3em;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 3em;
+	z-index: 2;
+}
+
+.icon-button .icon-youtube {
+	color: #CC181E;
+}
+.icon-button .icon-blogger2 {
+	color: #ff6600;
+}
+.icon-button .icon-twitter {
+	color: #5EA9DD;
+}
+.icon-button .icon-facebook {
+	color: #3A5795;
+}
+.icon-button .icon-google-plus {
+	color: #C30907;
+}
+
+.icon-button:hover .icon-youtube, .icon-button:hover .icon-blogger2, .icon-button:hover .icon-twitter, .icon-button:hover .icon-facebook, .icon-button:hover .icon-google-plus {
+	color: #FFFFFF;
+}

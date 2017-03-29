@@ -1,0 +1,458 @@
+.full-width-div {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.form-right{
+    float:right;
+}
+
+.ul, .li {
+    color: #fff;
+    -ms-user-select:none;
+}
+
+
+html {
+    position: relative;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    height: 100%;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 320px;
+    background-color: #bad0b8;
+    background-image: -webkit-linear-gradient(right, #FC7864, #FDA366);
+    background-image: -moz-linear-gradient(right, #FC7864, #FDA366);
+    background-image: -o-linear-gradient(right, #FC7864, #FDA366);
+    background-image: -ms-linear-gradient(right, #FC7864, #FDA366);
+    background-image: linear-gradient(right, #FC7864, #FDA366);
+    box-shadow: 0px 2px 2px #000;
+    -moz-box-shadow: 0px 2px 2px #000;
+    -webkit-box-shadow: 0px 2px 2px #000;
+    left: 0;
+}
+
+.container-1 {
+    margin: 0 auto;
+    width: 100%;
+    text-align:center
+}
+.container-1 .text-muted {
+    margin: 20px 0;
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.row-no-padding {
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.loader{  
+background-position: left center;
+width:55px;
+background-image: url(../imagenes/loader.gif);
+background-repeat: no-repeat;
+}
+
+#ventana-flotante {
+width: 100%;  /* Ancho de la ventana */
+max-width: 900px;
+height: 100%;  /* Alto de la ventana */
+max-height: 500px;
+background: #ceffad;  /* Color de fondo */
+position: fixed;
+top: 70px;
+left: 30%;
+margin-left: -180px;
+border: 1px solid #adffad;  /* Borde de la ventana */
+box-shadow: 0 5px 25px rgba(0,0,0,.1);  /* Sombra */
+z-index:999;
+border-radius: 8px;
+}
+
+#ventana-flotante #contenedor {
+padding: 25px 10px 10px 10px;
+}
+
+#ventana-flotante .cerrar {
+float: right;
+border-bottom: 1px solid #bbb;
+border-left: 1px solid #bbb;
+color: #999;
+background: white;
+line-height: 17px;
+text-decoration: none;
+padding: 0px 14px;
+font-family: Arial;
+border-radius: 0 0 0 5px;
+box-shadow: -1px 1px white;
+font-size: 18px;
+-webkit-transition: .3s;
+-moz-transition: .3s;
+-o-transition: .3s;
+-ms-transition: .3s;
+border-radius: 8px;
+}
+
+#ventana-flotante .cerrar:hover {
+background: #ff6868;
+color: white;
+text-decoration: none;
+text-shadow: -1px -1px red;
+border-bottom: 1px solid red;
+border-left: 1px solid red;
+}
+
+#ventana-flotante #contenedor .contenido {
+padding: 15px;
+box-shadow: inset 1px 1px white;
+background: #deffc4;  /* Fondo del mensaje */
+border: 1px solid #9eff9e;  /* Borde del mensaje */
+font-size: 20px;  /* Tamaño del texto del mensaje */
+color: #555;  /* Color del texto del mensaje */
+text-shadow: 1px 1px white;
+margin: 0 auto;
+border-radius: 8px;
+}
+.oculto {-webkit-transition:1s;-moz-transition:1s;-o-transition:1s;-ms-transition:1s;opacity:0;-ms-opacity:0;-moz-opacity:0;visibility:hidden;}
+
+a:link{text-decoration: none;}
+
+.imgsas{width: 1%;}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+@font-face {
+	font-family: 'Impactante';
+    src: url('../fonts/original_impact.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/original_impact.woff') format('woff'),
+         url('../fonts/original_impact.ttf') format('truetype'),
+         url('../fonts/original_impact.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: "warnock";
+    src: url(../fonts/Warnock.ttf) format("truetype");
+}
+
+
+@font-face {
+	font-family: 'Blacksword';
+    src: url('../fonts/original_Blacksword.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/original_Blacksword.woff') format('woff'),
+         url('../fonts/original_Blacksword.ttf') format('truetype'),
+         url('../fonts/original_Blacksword.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'AnotherWetShabby';
+  src: url('../fonts/AnotherWetShabby.woff') format('woff'),
+       url('../fonts/AnotherWetShabby.ttf') format('truetype'),
+       url('../fonts/AnotherWetShabby.svg#AnotherWetShabby') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AnotherWetShabbyTrial';
+  src: url('../fonts/AnotherWetShabbyTrial.eot');
+  src: url('../fonts/AnotherWetShabbyTrial.woff2') format('woff2'),
+       url('../fonts/AnotherWetShabbyTrial.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.titulonav{
+    color: #ff0;
+    font-family: "blacksword";
+    font-size:200%;
+}
+
+
+
+
+.loginform{
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.navbar-fixed-top{
+    background-color: #C984EA;
+}
+
+@font-face {
+font-family: 'GothamHTF-Book';
+font-style: normal;
+font-weight: normal;
+src: local('GothamHTF-Book'), url('../fonts/GothamHTF-Book.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'LeagueGothic-Regular';
+    src: url('../fonts/original_LeagueGothic-Regular.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/original_LeagueGothic-Regular.woff') format('woff'),
+         url('../fonts/original_LeagueGothic-Regular.ttf') format('truetype'),
+         url('../fonts/original_LeagueGothic-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#valores p{
+    font-size: 100%;
+    font-family: 'GothamHTF-Book';
+    text-align: justify;
+    padding: 10px;
+}
+
+#val{
+    font-family:'warnock';
+    text-align: center;
+    font-size: 150%;
+    list-style-type: none;
+    display: inline
+}
+
+#list>ul, li{
+    list-style-type: none;
+    display: inline;
+    text-align: center;
+}
+
+.barato{
+    font-size: 500%;
+    color:#7C5DEA;
+}
+
+.body{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#febbbb+0,fe9090+45,ff5c5c+100;Red+3D+%231 */
+background: #febbbb; /* Old browsers */
+background: -moz-linear-gradient(top,  #febbbb 0%, #fe9090 45%, #ff5c5c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #febbbb 0%,#fe9090 45%,#ff5c5c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #febbbb 0%,#fe9090 45%,#ff5c5c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=0 ); /* IE6-9 */
+}
+
+.body2{
+   background: rgba(49,59,247,1);
+background: -moz-linear-gradient(left, rgba(49,59,247,1) 0%, rgba(91,240,203,1) 36%, rgba(83,230,95,1) 51%, rgba(25,240,46,1) 71%, rgba(25,240,46,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(49,59,247,1)), color-stop(36%, rgba(91,240,203,1)), color-stop(51%, rgba(83,230,95,1)), color-stop(71%, rgba(25,240,46,1)), color-stop(100%, rgba(25,240,46,1)));
+background: -webkit-linear-gradient(left, rgba(49,59,247,1) 0%, rgba(91,240,203,1) 36%, rgba(83,230,95,1) 51%, rgba(25,240,46,1) 71%, rgba(25,240,46,1) 100%);
+background: -o-linear-gradient(left, rgba(49,59,247,1) 0%, rgba(91,240,203,1) 36%, rgba(83,230,95,1) 51%, rgba(25,240,46,1) 71%, rgba(25,240,46,1) 100%);
+background: -ms-linear-gradient(left, rgba(49,59,247,1) 0%, rgba(91,240,203,1) 36%, rgba(83,230,95,1) 51%, rgba(25,240,46,1) 71%, rgba(25,240,46,1) 100%);
+background: linear-gradient(to right, rgba(49,59,247,1) 0%, rgba(91,240,203,1) 36%, rgba(83,230,95,1) 51%, rgba(25,240,46,1) 71%, rgba(25,240,46,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313bf7', endColorstr='#19f02e', GradientType=1 );
+}
+
+.capitalLetter
+{
+   float:left;
+   color:black;
+   background:white;
+   border:1px solid #999999;
+   font-size:80px;
+   line-height:60px;
+   padding:2px;
+   font-family:times;
+   
+}
+
+.navbar .nav > li > a{
+    font-family: 'LeagueGothic-Regular';
+    color: #466BB0;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+#login{
+    text-align: center;
+    font-size: 300%;
+}
+
+.loader{
+    width: 5%;
+    position: absolute;
+    float:left;
+}
+
+.video1{
+  margin-bottom: 30px;
+  padding-bottom: 60px;
+}
+
+.sepa{
+    padding-top:3%;
+}
+
+#retrato{
+border: 5px solid #ddd;
+padding: 5px; /*Inner border size*/
+background: #fff; /*Inner border color*/
+}
+
+.img-desc {
+position: relative;
+display: block;
+height:335px;
+width: 575px;
+}
+.img-desc cite {
+background: #111;
+filter:alpha(opacity=55);
+opacity:.55;
+color: #fff;
+position: absolute;
+bottom: 0;
+left: 0;
+width: 555px;
+padding: 10px;
+border-top: 1px solid #999;
+}
+
+.imgs{
+    max-height: 1920px;
+}
+
+
+.centerlol{
+    position: absolute;
+		/*nos posicionamos en el centro del navegador*/
+		top:50%;
+		left:50%;
+		/*determinamos una anchura*/
+		width:400px;
+		/*indicamos que el margen izquierdo, es la mitad de la anchura*/
+		margin-left:-200px;
+		/*determinamos una altura*/
+		height:300px;
+		/*indicamos que el margen superior, es la mitad de la altura*/
+		margin-top:-150px;
+		
+		padding:5px;
+}
+
+.retrato {
+
+text-shadow: 0 1px 0 #ccc, 
+0 2px 0 #c9c9c9,
+0 3px 0 #bbb,
+0 4px 0 #b9b9b9,
+0 5px 0 #aaa,
+0 6px 1px rgba(0,0,0,.1),
+0 0 5px rgba(0,0,0,.1),
+0 1px 3px rgba(0,0,0,.3),
+0 3px 5px rgba(0,0,0,.2),
+0 5px 10px rgba(0,0,0,.25),
+0 10px 10px rgba(0,0,0,.2),
+0 20px 20px rgba(0,0,0,.15);
+color: #fff;
+font-size: 300%;
+font-family: 'Impactante';
+
+}
+
+
+    
+    @media (min-width: 200px){
+        .espacio{
+            height: 650px;
+    }
+}
+
+
+.firma{
+    font-family: 'AnotherWetShabby';
+    font-size: 300%;
+}
+
+.firma-navbar-1{
+    font-family: 'AnotherWetShabby';
+    color:#000;
+    font-size: 300%;
+}
+
+.firma-navbar-2{
+    font-family: 'AnotherWetShabby';
+    color:#8a9091;
+    font-size: 300%;
+}
+
+.firma-navbar-3{
+    font-family: 'AnotherWetShabby';
+    color:#8a9091;
+    font-size: 200%;
+}
+
+
+
