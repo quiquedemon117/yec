@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Registro</title>
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">  
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" type="text/css" href="../../sweetalert/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../asset/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../asset/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="../../css/login.css">
+    <script type="text/javascript" src="../../js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../../sweetalert/sweetalert.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/bootstrap.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script type="text/javascript" src="../../js/validacion_input_registro.js"></script>
+</head>
+
+<body>
+<div class="container">
+<div class="row main">
+  <div class="login-form">
+  <form method="post" action="registrousu.php">
+     <a href="../../index.html"><img src="../../images/logo.png" width="100%"></a>
+     <div class="form-group">
+       <input type="text" class="form-control" placeholder="Usuario [Correo Electronico]" id="user" name="user" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="mail@example.com" required>
+       <i class="fa fa-user"></i>
+     </div>
+     <div class="form-group">
+       <input type="password" class="form-control" placeholder="Contraseña" id="pass" name="pass" required>
+       <i class="fa fa-lock"></i>
+     </div>
+          <div class="form-group">
+       <input type="password" class="form-control" placeholder="Repita su contraseña" id="pass2" name="pass2" required>
+       <i class="fa fa-refresh"></i>
+     </div>
+     <div class="form-group">
+       <input type="text" class="form-control" placeholder="Nombre(s)" id="nombre" name="nombre" required>
+       <i class="fa fa-users"></i>
+     </div>
+     <div class="form-group">
+       <input type="text" class="form-control" placeholder="Apellidos" id="apellidos" name="apellidos" required>
+       <i class="fa fa-users"></i>
+     </div>
+     <div class="form-group">
+       <select class="form-control" name="tipo" required>
+         <option value="">Seleccione una opción</option>
+         <option value="Captura Contable">Captura Contable</option>
+         <option value="Seguros">Seguros</option>
+         <option value="Cursos">Cursos</option>
+       </select>
+     </div>
+      <span class="alert">El usuario ya existe</span>
+      <center><div class="captcha_wrapper"><div class="g-recaptcha" data-sitekey="6LeFFSIUAAAAAEMOA81CF7uryGmFOQbmspu7iVQC"></div></div></center><br>
+     <input type="submit" name="login" id="login" value="Registrar" class="log-btn" onclick="asd();">
+     
+    </form>
+   </div>
+   </div>
+</div>
+</body>
+</html>

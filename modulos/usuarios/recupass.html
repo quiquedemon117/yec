@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Despacho Contable</title>
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../asset/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome CSS -->
+    <link href="../../css/font-awesome.min.css" rel="stylesheet">
+    
+    
+    <!-- Animate CSS -->
+    <link href="../../css/animate.css" rel="stylesheet" >
+    
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="../../css/owl.carousel.css" >
+    <link rel="stylesheet" href="../../css/owl.theme.css" >
+    <link rel="stylesheet" href="../../css/owl.transitions.css" >
+
+    <!-- Custom CSS -->
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/responsive.css" rel="stylesheet">
+    
+    <!-- Colors CSS -->
+    <link rel="stylesheet" type="text/css" href="../../css/color/light-red.css">
+    
+    
+    
+    <!-- Colors CSS -->
+    <link rel="stylesheet" type="text/css" href="../../css/color/light-red.css" title="light-red">
+	<link rel="stylesheet" type="text/css" href="../../css/login.css">
+    
+    
+    <!-- Modernizer js -->
+    <script src="../../js/modernizr.custom.js"></script>
+
+    <script type="text/javascript" src="../../js/jquery-2.1.1.min.js"></script>
+
+    <script type="text/javascript" src="../../asset/js/bootstrap.js"></script>
+
+    
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script type="text/javascript">
+$(document).ready(function() {	
+	$('#enviar').click(function(){
+		
+		$('#resultado').html('<i class="fa fa-circle-o-notch fa-spin" style="font-size:24px"></i>');
+
+		var user = $('input#email').val();	
+		//alert(username);	
+		var dataString = 'user='+user;
+		
+		$.ajax({
+            type: "POST",
+            url: "usuexiste.php",
+            data: dataString,
+            success: function(data) {
+				$('#resultado').html(data);
+				//alert(data);
+            }
+        });
+    });              
+});    
+</script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row text-center">
+		<div class="login-form">
+			<form id="frmRestablecer" action="" method="post">
+
+					<div class="panel-heading"> Restaurar contraseña </div>
+						<div class="panel-body">
+							<div class="form-group">
+							<label for="email"> Escribe el email asociado a tu cuenta para recuperar tu contraseña </label>
+							<input type="email" id="email" class="form-control" name="email">
+						</div>
+					<div class="form-group">
+					<input type="button" class="btn btn-primary" value="Recuperar contraseña" id="enviar" required>
+					</div>
+				</div>
+
+			</form>
+ 
+<div id="resultado"></div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
