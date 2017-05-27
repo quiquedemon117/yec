@@ -19,25 +19,27 @@
     <script type="text/javascript" src="../../sweetalert/sweetalert.min.js"></script>
     <script type="text/javascript" src="../../asset/js/bootstrap.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script type="text/javascript" src="../../js/validacion_input_registro.js"></script>
+    <script type="text/javascript" src="../../js/acceder.js"></script>
 </head>
 
 <body>
 <div class="container">
 <div class="row main">
   <div class="login-form">
-  <form method="post" action="registrousu.php">
+  <form method="post" action="registrousu.php"><br class="visible-xs"><br class="visible-xs">
      <a href="../../index.html"><img src="../../images/logo.png" width="100%"></a>
      <div class="form-group">
        <input type="text" class="form-control" placeholder="Usuario [Correo Electronico]" id="user" name="user" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="mail@example.com" required>
+       <div class="keyboard-space"></div>
        <i class="fa fa-user"></i>
      </div>
      <div class="form-group">
        <input type="password" class="form-control" placeholder="Contraseña" id="pass" name="pass" required>
+       <div class="keyboard-space"></div>
        <i class="fa fa-lock"></i>
      </div>
           <div class="form-group">
-       <input type="password" class="form-control" placeholder="Repita su contraseña" id="pass2" name="pass2" required>
+       <input type="password" class="form-control" placeholder="Repita su contraseña" id="pass2" name="pass2" oninvalid="aslo()" required>
        <i class="fa fa-refresh"></i>
      </div>
      <div class="form-group">

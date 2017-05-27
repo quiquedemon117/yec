@@ -20,6 +20,12 @@ a:link
   font-family: arial;
 }
 
+body, html{
+     height: 100%;
+  background-repeat: no-repeat;
+  font-family: 'Oxygen', sans-serif;
+}
+
 body {
   background: #B9090B;
 }
@@ -36,7 +42,7 @@ color: #D0006A;
 }
 
 .login-form {
-  width: 400px;
+  max-width: 380px;
   padding: 40px 30px;
   background: #eee;
   -moz-border-radius: 4px;

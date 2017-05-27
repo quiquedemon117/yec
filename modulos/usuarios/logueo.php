@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../sweetalert/sweetalert.css">
+    <script type="text/javascript" src="../../sweetalert/sweetalert.min.js"></script>
+</head>
+</html>
 <?php
 
 if (isset($_POST["user"]) && isset($_POST["pass"])) {
@@ -17,28 +25,28 @@ if (isset($_POST["user"]) && isset($_POST["pass"])) {
 
 
         if ($ns == 1) { // relizo la comparacion para saber a q menu de usuario me va direcionar si es NivelUsuario 1 va al pagina inicio administrador
-            //header("refresh:0.1 ;url=/Yanet_EScalona/admin.php");
             $_SESSION['loggedin'] = true;
             $_SESSION['user'] = $user;
             $_SESSION['start'] = time();
-            $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
+            $_SESSION['expire'] = $_SESSION['start'] + (30 * 60);
 
             $data = mysqli_fetch_array($result);
             $_SESSION["user"] = $data["user"];
-            echo"2";
+            /*echo"2";*/
+            header("refresh:0.1 ;url=/yec/modulos/admin/admin.php");
         } else {
-                        $_SESSION['loggedin'] = true;
+            $_SESSION['loggedin'] = true;
             $_SESSION['user'] = $user;
             $_SESSION['start'] = time();
-            $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
+            $_SESSION['expire'] = $_SESSION['start'] + (30 * 60);
             $data = mysqli_fetch_array($result);
             $_SESSION["user"] = $data["user"];
-            echo "1";
-            //header("refresh:0.1 ;url=/Yanet_EScalona/clientes.php");
+            /*echo "1";*/
+            header("refresh:0.1 ;url=/yec/modulos/clientes/clientes.php");
         }
     } else {
-
-        //header("refresh:2.9 ;url=/Yanet_EScalona/login.php");
+        echo '<script>swal("Oops", "El usuario o contraseña no son validos!", "error");</script>';
+        header("refresh:2.1 ;url=/yec/modulos/usuarios/login.html");
     }
 } else {
     echo "error las variables no estan definidas";
