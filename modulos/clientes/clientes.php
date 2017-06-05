@@ -85,7 +85,7 @@ function(){
                     <a  href="#" onclick="miscursos();">Mis cursos</a>
                 </li>
                 <li>
-                    <a  href="#" onclick="tienda();">Tienda de cursos</a>
+                    <a  href="cart/">Tienda de cursos</a>
                 </li>
                 <li>
                     <a  href="#" onclick="progreso();">Progreso</a>
@@ -103,13 +103,13 @@ function(){
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
-						<i class="fa fa-envelope" aria-hidden="true" style="float:right; font-size:400%;"></i><br>
+						<i class="fa fa-envelope" aria-hidden="true" style="float:right; font-size:400%;"></i><br><br><br>
                         <div id="home">
-                        <center><h1 class="text-center" style="width: 100%;">Bienvenido<br><< <?php echo $_SESSION['nom'];?> >> </h1></center>
+                        <center><h3 c>Bienvenido</h3><h5 class="text-center"><?php echo $_SESSION['nom'];?></h5></center>
                         <center><p>Este es el proceso que llevas actualmente:</p>
                          <div id="container" style="width: 100%; height: 100%; max-width: 350px; margin: 0 auto"></div></center>
                          </div>
