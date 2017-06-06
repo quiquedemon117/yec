@@ -50,7 +50,7 @@ $tipoPOST = htmlspecialchars(mysqli_real_escape_string($con, $tipoPOST));
 
 
 //Escribimos la consulta necesaria
-$consultaUsuarios = "SELECT user FROM usuarios";
+$consultaUsuarios = "SELECT user FROM usuarios WHERE user= '$userPOST'";
 
 //Obtenemos los resultados
 $resultadoConsultaUsuarios = mysqli_query($con, $consultaUsuarios) or die(mysql_error());
@@ -61,7 +61,8 @@ $userBD = $datosConsultaUsuarios['user'];
 //Si el valor del input del usuario es igual a alguno que ya exista, mostramos un mensaje de error
 
 if ($userPOST == $userBD) {
-   die('Ya existe un usuario con el nombre ' . $userPOST . '');
+/*   echo('<script>swal("Ya existe un usuario con el nombre ' . $userPOST . '")</script>');*/
+   echo '<script>swal({ title: "Error", text: "Ya existe un usuario con el nombre ' . $userPOST . '", type: "error" }, function(){ window.location.href = "registro.html"; });</script>';
 } else {
 //Si no hay errores, procedemos a encriptar la contraseña
 //Lectura recomendada: https://mimentevuela.wordpress.com/2015/10/08/establecer-blowfish-como-salt-en-crypt-2/
@@ -76,7 +77,7 @@ if ($userPOST == $userBD) {
    if (mysqli_query($con, $consulta) && mysqli_query($con, $consulta2)) {
        die('<script>swal({ title: "Bienvenido", text: "ahora ya puedes iniciar sesion", type: "success" }, function(){ window.location.href = "login.html"; });</script>');
    } else {
-       die('Error de luis');
+       die('Error de administración');
    };
 }; //Fin comprobación if(empty($userPOST) || empty($passPOST))
 

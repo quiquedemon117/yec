@@ -8,3 +8,22 @@ function aslo(){
     }
 });
 }
+
+function losa(){
+	$(document).ready(function() {    
+
+        var user = $("#user").val();        
+        var dataString = 'user='+user;
+
+        $.ajax({
+            type: "POST",
+            url: "../modulos/usuarios/val_user.php",
+            data: dataString,
+            success: function(data) {
+            	if(data == 'usuario ya registrada'){
+                alert('El usuario ya existe intente con otro porfavor');
+                }
+            }
+        });            
+}); 
+}

@@ -11,7 +11,7 @@ include_once('../database/conexion.php');
 
 if($_REQUEST){
 
-    $user = $_REQUEST['email'];
+    $user = $_REQUEST['user'];
     $query = "select * from usuarios where user = '".strtolower($user)."'";
     $results = mysqli_query($con, $query) or die('ok');
     $row = mysqli_fetch_array($results);
@@ -27,5 +27,3 @@ if($_REQUEST){
 
 }
 ?>
-
-<div id="Error"></div>
