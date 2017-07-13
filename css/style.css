@@ -526,7 +526,7 @@ li {
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
@@ -894,7 +894,7 @@ li {
 }
 
 #main-slide .slider-content{
-	top: 45%;
+	top: 35%;
 	margin-top: -70px;
 	left: 0;
 	padding: 0;
@@ -974,7 +974,7 @@ li {
     line-height: 50px;
     letter-spacing: 5px;
     color: #fff;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
 }
 
 
@@ -2423,4 +2423,61 @@ iframe {
   height: 100%;
   padding: 15px; /* firefox bug fix */
   width: auto;
+}
+
+hr.style17 {
+  border-top: 1px solid #8c8b8b;
+  text-align: center;
+}
+hr.style17:after {
+  content: '§';
+  display: inline-block;
+  position: relative;
+  top: -14px;
+  padding: 0 10px;
+  background: #f0f0f0;
+  color: #8c8b8b;
+  font-size: 18px;
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+.caja {
+
+font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+
+color: #ffffff;
+
+font-size: 18px;
+
+font-weight: 400;
+
+text-align: center;
+
+background: #889ccf;
+
+margin: 0 0 25px;
+
+overflow: hidden;
+
+padding: 20px;
+
+border-radius: 35px 0px 35px 0px;
+
+-moz-border-radius: 35px 0px 35px 0px;
+
+-webkit-border-radius: 35px 0px 35px 0px;
+
+border: 2px solid #5878ca;
+
+
+}
+
+.neon {
+  color: #fff;
+  text-shadow: 0 0 5px #7f7f7f, 0 0 10px #7f7f7f, 0 0 15px #7f7f7f, 0 0 20px #0097ff, 0 0 25px #0097ff;
+  -webkit-text-fill-color: #F4ECFF;
+  -webkit-text-stroke-color:#C546F7;
+  -webkit-text-stroke-width:0.2px; 
 }
