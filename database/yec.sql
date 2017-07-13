@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 23-05-2017 a las 23:09:47
+-- Tiempo de generación: 13-07-2017 a las 17:39:31
 -- Versión del servidor: 5.7.17-log
 -- Versión de PHP: 5.6.30
 
@@ -49,6 +49,31 @@ INSERT INTO `clientes` (`id_cliente`, `nombre`, `apellidos`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `products_list`
+--
+
+CREATE TABLE `products_list` (
+  `id` int(11) NOT NULL,
+  `product_name` varchar(60) NOT NULL,
+  `product_desc` text NOT NULL,
+  `product_code` varchar(60) NOT NULL,
+  `product_image` varchar(60) NOT NULL,
+  `product_price` decimal(10,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `products_list`
+--
+
+INSERT INTO `products_list` (`id`, `product_name`, `product_desc`, `product_code`, `product_image`, `product_price`) VALUES
+(1, 'Curso 1', 'Cool T-shirt, Cotton Fabric. Wash in normal water with mild detergent.', 'TSH1', 'tshirt-1.jpg', '8.50'),
+(2, 'Curso 2', 'Cool Happy Birthday printed T-shirt.Crafted from light, breathable cotton.', 'TSH2', 'tshirt-2.jpg', '7.40'),
+(3, 'Curso 3', 'Yellow t-shirt makes the perfect addition to your casual wardrobe.', 'TSH3', 'tshirt-3.jpg', '9.50'),
+(4, 'Curso 4', 'Stylish and trendy, this crew neck short sleeved t-shirt is made with 100% pure cotton.', 'TSH4', 'tshirt-4.jpg', '10.80');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `usuarios`
 --
 
@@ -88,6 +113,12 @@ INSERT INTO `usuarios` (`id`, `user`, `pass`, `privilegios`, `tipo`, `fecharegis
 --
 ALTER TABLE `clientes`
   ADD PRIMARY KEY (`id_cliente`);
+
+--
+-- Indices de la tabla `products_list`
+--
+ALTER TABLE `products_list`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `usuarios`

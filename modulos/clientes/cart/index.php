@@ -105,7 +105,7 @@ $products_list .= <<<EOT
 <form class="form-item">
 <h4>{$row["product_name"]}</h4>
 <div><img src="images/{$row["product_image"]}"></div>
-<div>Price : $ {$row["product_price"]}<div>
+<div>Precio : $ {$row["product_price"]}<div>
 <div class="item-box">
     <div class="form-group">
 	Color :
@@ -137,7 +137,7 @@ $products_list .= <<<EOT
 	</div>
 	
     <input name="product_code" type="hidden" value="{$row["product_code"]}">
-    <button type="submit">Agregar al carrito</button>
+    <button type="submit" class="producto" precio="{$row["product_price"]} role="button">Agregar al carrito</button>
 </div>
 </form>
 </li>
@@ -148,5 +148,4 @@ $products_list .= '</ul></div>';
 
 echo $products_list;
 ?>
-</body>
 </html>

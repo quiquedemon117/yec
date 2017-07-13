@@ -13,6 +13,7 @@ setlocale(LC_MONETARY,"en_US"); // US national format (see : http://php.net/mone
 <link rel="stylesheet" type="text/css" href="../../../sweetalert/sweetalert.css">
 <link rel="stylesheet" type="text/css" href="../../../asset/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="../../../asset/css/bootstrap-theme.css">
+<link rel="stylesheet" href="../../../css/font-awesome.css">
 <style type="text/css">
 a:hover{text-decoration:none;}
 a{text-decoration:none;}
@@ -22,6 +23,7 @@ a{text-decoration:none;}
 <script type="text/javascript" src="../../../asset/js/bootstrap.js"></script>
 </head>
 <body>
+<center><br><img src='../../../images/logo.png' alt='' width='20%'></center>
 <h3 style="text-align:center">Resumen de compra</h3>
 <?php
 if(isset($_SESSION["products"]) && count($_SESSION["products"])>0){
@@ -39,28 +41,32 @@ if(isset($_SESSION["products"]) && count($_SESSION["products"])>0){
 		
 		$item_price 	= sprintf("%01.2f",($product_price * $product_qty));  // price x qty = total item price
 		
-		$cart_box 		.=  "<li> $product_code &ndash;  $product_name (Qty : $product_qty | $product_color | $product_size) <span> $ . $item_price </span></li>";
+		$cart_box 		.=  "<li>$product_code &ndash;  $product_name (Qty : $product_qty | $product_color | $product_size) <span> $ . $item_price </span></li>";
 		
 		$subtotal 		= ($product_price * $product_qty); //Multiply item quantity * price
 		$total 			= ($total + $subtotal); //Add up to total price
 	}
 	
-	$grand_total = $total + $shipping_cost; //grand total
 	
+	$shipping_cost = ($total * 0.16);
+	$grand_total = $total + $shipping_cost; //grand total
+
+
 	foreach($taxes as $key => $value){ //list and calculate all taxes in array
 			$tax_amount 	= round($total * ($value / 100));
 			$tax_item[$key] = $tax_amount;
-			$grand_total 	= $grand_total + $tax_amount; 
+			$grand_total 	= $grand_total; 
 	}
 	
 	foreach($tax_item as $key => $value){ //taxes List
 		$list_tax .= $key. ' $'. sprintf("%01.2f", $value).'<br />';
 	}
 	
-	$shipping_cost = ($shipping_cost)?'Shipping Cost : $'. sprintf("%01.2f", $shipping_cost).'<br />':'';
+	$shipping_cost = ($shipping_cost)?'IVA : $'. sprintf("%01.2f", $shipping_cost).'<br />':'';
 	
 	//Print Shipping, VAT and Total
-	$cart_box .= "<li class=\"view-cart-total\">$shipping_cost  $list_tax <hr>Total a pagar : $ ".sprintf("%01.2f", $grand_total)."<br><br><button type='button' class='btn btn-success' data-toggle='modal' data-target='#myModal'>Pagar</button></li>";
+	$cart_box .= "<li class=\"view-cart-total\">Subtotal: $total <br>  $shipping_cost <hr>Total a pagar : $ ".sprintf("%01.2f", $grand_total)."<br><br><form action='https://www.paypal.com/mx/cgi-bin/webscr' method='post'><input type='hidden' name='cmd' value='_xclick'><input type='hidden' name='business' value='ing_lebd@hotmail.com'><input type='hidden' name='item_name' value='Cursos'><input type='hidden' name='currency_code' value='MXN'><input type='hidden' name='amount' value='{$grand_total}'><input type='image' src='images/paypal.png' name='submit' alt='Make payments with PayPal - it's fast, free and secure!' width='30%'>
+</form></li>";
 	$cart_box .= "</ul>";
 	
 	
