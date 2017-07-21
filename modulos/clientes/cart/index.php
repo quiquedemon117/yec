@@ -108,8 +108,8 @@ $products_list .= <<<EOT
 <div>Precio : $ {$row["product_price"]}<div>
 <div class="item-box">
     <div class="form-group">
-	Color :
-    <select name="product_color">
+	<label>Color :</label>
+    <select class="form-control" name="product_color">
     <option value="Red">Red</option>
     <option value="Blue">Blue</option>
     <option value="Orange">Orange</option>
@@ -117,8 +117,8 @@ $products_list .= <<<EOT
 	</div>
 	
 	<div class="form-group">
-    Qty :
-    <select name="product_qty">
+    <label>Qty :</label>
+    <select class="form-control" name="product_qty">
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
@@ -128,8 +128,8 @@ $products_list .= <<<EOT
 	</div>
 	
 	<div class="form-group">
-    Size :
-    <select name="product_size">
+    <label>Size :</label>
+    <select class="form-control" name="product_size">
 	<option value="M">M</option>
     <option value="XL">XL</option>
     <option value="XXL">XLL</option>
@@ -137,7 +137,7 @@ $products_list .= <<<EOT
 	</div>
 	
     <input name="product_code" type="hidden" value="{$row["product_code"]}">
-    <button type="submit" class="producto" precio="{$row["product_price"]} role="button">Agregar al carrito</button>
+    <center><button type="submit" class="producto btn" precio="{$row["product_price"]} role="button">Agregar al carrito</button></center>
 </div>
 </form>
 </li>
@@ -148,4 +148,5 @@ $products_list .= '</ul></div>';
 
 echo $products_list;
 ?>
+</body>
 </html>
