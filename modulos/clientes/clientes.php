@@ -115,12 +115,26 @@ function(){
                          </div>
 
                          <div id="miscursos">
-                         	<p>Lorem ipsum dolor sit amet, consectetuvadfvafdr adipisicing elit, sed do eiusmod
-                         	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                         	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                         	consequat. Duis aute adfvadfvadfirure dafolor in reprehenderit in voluptate velit esse
-                         	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                         	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                         	
+                            <div class="container">
+                            <div class="row">
+                              <div class="col-md-6">
+                                  <h1>Mis Cursos</h1><br>
+                                  <h5>Curso No. 1</h5>
+                                  <img src="../../images/llamas.jpg" width="30%">
+                              <div style="float:right;">
+                                <h5>Descripcion del curso:</h5>
+                                <p>Este es un curso muy bueno</p><br>
+                                <span>Disfruta de las primeras 3 partes otorgada por apertura</span><br>
+                                <a href=""><span>Parte 1</span></a><br>
+                                <a href=""><span>Parte 2</span></a><br>
+                                <a href=""><span>Parte 3</span></a><br><br>
+                                <a href="cart/index.php"><button class="btn btn-success">Comprar curso</button></a>
+                              </div>
+                              </div>
+                              </div>
+                            </div>
+
                          </div>
 
                          <div id="tienda">

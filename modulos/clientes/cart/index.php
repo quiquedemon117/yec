@@ -24,7 +24,7 @@ $(document).ready(function(){
 		$(".form-item").submit(function(e){
 			var form_data = $(this).serialize();
 			var button_content = $(this).find('button[type=submit]');
-			button_content.html('Adding...'); //Loading button text 
+			button_content.html('Agregando al carrito...'); //Loading button text 
 
 			$.ajax({ //make ajax request to cart_process.php
 				url: "cart_process.php",
@@ -33,7 +33,7 @@ $(document).ready(function(){
 				data: form_data
 			}).done(function(data){ //on Ajax success
 				$("#cart-info").html(data.items); //total items in cart-info element
-				button_content.html('Add to Cart'); //reset button text to original text
+				button_content.html('Agregar al carrito'); //reset button text to original text
 				swal(  'Felicidades!', '¡El curso se agrego al carrito!', 'success'); //alert user
 				if($(".shopping-cart-box").css("display") == "block"){ //if cart box is still visible
 					$(".cart-box").trigger( "click" ); //trigger click to update the cart box.
@@ -107,7 +107,7 @@ $products_list .= <<<EOT
 <div><img src="images/{$row["product_image"]}"></div>
 <div>Precio : $ {$row["product_price"]}<div>
 <div class="item-box">
-    <div class="form-group">
+    <div class="form-group hide">
 	<label>Color :</label>
     <select class="form-control" name="product_color">
     <option value="Red">Red</option>
@@ -116,7 +116,7 @@ $products_list .= <<<EOT
     </select>
 	</div>
 	
-	<div class="form-group">
+	<div class="form-group hide">
     <label>Qty :</label>
     <select class="form-control" name="product_qty">
     <option value="1">1</option>
@@ -127,7 +127,7 @@ $products_list .= <<<EOT
     </select>
 	</div>
 	
-	<div class="form-group">
+	<div class="form-group hide">
     <label>Size :</label>
     <select class="form-control" name="product_size">
 	<option value="M">M</option>

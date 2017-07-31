@@ -52,7 +52,7 @@ if(isset($_POST["load_cart"]) && $_POST["load_cart"]==1)
 			$product_color = $product["product_color"];
 			$product_size = $product["product_size"];
 			
-			$cart_box .=  "<li> $product_name (Qty : $product_qty | $product_color  | $product_size ) &mdash; $ ".sprintf("%01.2f", ($product_price * $product_qty)). " <a href=\"#\" class=\"remove-item\" data-code=\"$product_code\">&times;</a></li>";
+			$cart_box .=  "<li> $product_name (Qty : $product_qty) &mdash; $ ".sprintf("%01.2f", ($product_price * $product_qty)). " <a href=\"#\" class=\"remove-item\" data-code=\"$product_code\">&times;</a></li>";
 			$subtotal = ($product_price * $product_qty);
 			$total = ($total + $subtotal);
 		}

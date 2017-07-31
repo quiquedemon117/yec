@@ -41,7 +41,7 @@ if(isset($_SESSION["products"]) && count($_SESSION["products"])>0){
 		
 		$item_price 	= sprintf("%01.2f",($product_price * $product_qty));  // price x qty = total item price
 		
-		$cart_box 		.=  "<li>$product_code &ndash;  $product_name (Qty : $product_qty | $product_color | $product_size) <span> $ . $item_price </span></li>";
+		$cart_box 		.=  "<li>$product_name <span> $ . $item_price </span></li>";
 		
 		$subtotal 		= ($product_price * $product_qty); //Multiply item quantity * price
 		$total 			= ($total + $subtotal); //Add up to total price
