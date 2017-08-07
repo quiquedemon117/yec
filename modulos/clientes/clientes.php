@@ -21,8 +21,12 @@
     <link rel="stylesheet" type="text/css" href="../../sweetalert/sweetalert.css">
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     <link rel="stylesheet" type="text/css" href="../../css/font-awesome.css">
+    <link rel="stylesheet" href="../../notification_menu/generate_notification_form/css/style.css">
     <script type="text/javascript" src="../../sweetalert/sweetalert-dev.js"></script>
     <script type="text/javascript" src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../notification_menu/generate_notification_form/js/jquery-ui-1.8.14.custom.min.js"></script>
+    <script src="../../notification_menu/generate_notification_form/js/ttw-notification-menu.js"></script>
+    <script src="../../js/jquery-notification-menu.js"></script>
     <script type="text/javascript" src="../../js/dashboard.js"></script>
     <script src="../../js/highcharts/highcharts.js"></script>
     <script src="../../js/highcharts/highcharts-more.js"></script>
@@ -109,7 +113,7 @@ function(){
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
 						<i class="fa fa-envelope" aria-hidden="true" style="float:right; font-size:400%;"></i><br><br><br>
                         <div id="home">
-                        <center><h3 c>Bienvenido</h3><h5 class="text-center"><?php echo $_SESSION['nom'];?></h5></center>
+                        <center><h3>Bienvenido</h3><h5 class="text-center"><?php echo $_SESSION['nom'];?></h5></center>
                         <center><p>Este es el proceso que llevas actualmente:</p>
                          <div id="container" style="width: 100%; height: 100%; max-width: 350px; margin: 0 auto"></div></center>
                          </div>
@@ -118,14 +122,15 @@ function(){
                          	
                             <div class="container">
                             <div class="row">
-                              <div class="col-md-6">
-                                  <h1>Mis Cursos</h1><br>
+                            <h1>Mis Cursos</h1>
+                              <div class="col-md-3">
                                   <h5>Curso No. 1</h5>
-                                  <img src="../../images/llamas.jpg" width="30%">
-                              <div style="float:right;">
+                                  <img src="../../images/llamas.jpg" width="70%">
+                              </div>
+                              <div class="col-md-9">
                                 <h5>Descripcion del curso:</h5>
                                 <p>Este es un curso muy bueno</p><br>
-                                <span>Disfruta de las primeras 3 partes otorgada por apertura</span><br>
+                                <span>Disfruta de las primeras 3 partes sin costo gracias a tu beca por aperturas</span><br>
                                 <a href=""><span>Parte 1</span></a><br>
                                 <a href=""><span>Parte 2</span></a><br>
                                 <a href=""><span>Parte 3</span></a><br><br>
