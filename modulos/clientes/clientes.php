@@ -131,7 +131,7 @@ function(){
                                 <h5>Descripcion del curso:</h5>
                                 <p>Este es un curso muy bueno</p><br>
                                 <span>Disfruta de las primeras 3 partes sin costo gracias a tu beca por aperturas</span><br>
-                                <a href=""><span>Parte 1</span></a><br>
+                                <a href="../cursos/dzslides/curso1.html"><span>Parte 1</span></a><br>
                                 <a href=""><span>Parte 2</span></a><br>
                                 <a href=""><span>Parte 3</span></a><br><br>
                                 <a href="cart/index.php"><button class="btn btn-success">Comprar curso</button></a>
