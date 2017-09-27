@@ -65,7 +65,7 @@ if(isset($_SESSION["products"]) && count($_SESSION["products"])>0){
 	$shipping_cost = ($shipping_cost)?'IVA : $'. sprintf("%01.2f", $shipping_cost).'<br />':'';
 	
 	//Print Shipping, VAT and Total
-	$cart_box .= "<li class=\"view-cart-total\">Subtotal: $total <br>  $shipping_cost <hr>Total a pagar : $ ".sprintf("%01.2f", $grand_total)."<br><br><form action='https://www.paypal.com/mx/cgi-bin/webscr' method='post'><input type='hidden' name='cmd' value='_xclick'><input type='hidden' name='business' value='ing_lebd@hotmail.com'><input type='hidden' name='item_name' value='Cursos'><input type='hidden' name='currency_code' value='MXN'><input type='hidden' name='amount' value='{$grand_total}'><input type='image' src='images/paypal.png' name='submit' alt='Make payments with PayPal - it's fast, free and secure!' width='30%'>
+	$cart_box .= "<li class=\"view-cart-total\">Subtotal: $total <br>  $shipping_cost <hr>Total a pagar : $ ".sprintf("%01.2f", $grand_total)."<br><br><form action='https://www.paypal.com/mx/cgi-bin/webscr' method='post'><input type='hidden' name='cmd' value='_xclick'><input type='hidden' name='business' value='cristi_escalona@hotmail.com'><input type='hidden' name='item_name' value='Cursos'><input type='hidden' name='currency_code' value='MXN'><input type='hidden' name='amount' value='{$grand_total}'><input type='image' src='images/paypal.png' name='submit' alt='Make payments with PayPal - it's fast, free and secure!' width='30%'>
 </form></li>";
 	$cart_box .= "</ul>";
 	
