@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="../../sweetalert/sweetalert.css">
-	<script type="text/javascript" src="../../sweetalert/sweetalert.min.js"></script>
-	<title></title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../../sweetalert/sweetalert.css">
+  <script type="text/javascript" src="../../sweetalert/sweetalert.min.js"></script>
+  <title></title>
 </head>
 </html>
 <?php
   $response = $_POST["g-recaptcha-response"];
   $url = 'https://www.google.com/recaptcha/api/siteverify';
   $data = array(
-    'secret' => '6LdvASoUAAAAAG3KvuPijSjUrRXmQhxeePF2o6_W',
+    'secret' => '6Lds6TIUAAAAACvy2_CsHFHZtuk5h7osZxewpWg3',
     'response' => $_POST["g-recaptcha-response"]
   );
   $options = array(
@@ -67,24 +67,29 @@ if ($userPOST == $userBD) {
 //Si no hay errores, procedemos a encriptar la contraseña
 //Lectura recomendada: https://mimentevuela.wordpress.com/2015/10/08/establecer-blowfish-como-salt-en-crypt-2/
    //Armamos la consulta para introducir los datos
-   $consulta = "INSERT INTO usuarios (user, pass, tipo, fecharegistrousu, ultimaconexion, idsesion) 
-  VALUES ('$userPOST', '$passPOST', '$tipoPOST', '$fechaformat', 'no login', 'no login')";
+   //
 
-   $consulta2 = "INSERT INTO clientes (nombre, apellidos) VALUES ('$nomPOST', '$apPOST')";
+    $consulta1 = "INSERT INTO usuarios (id_user, user, pass, tipo, fecharegistrousu, ultimaconexion, idsesion) 
+  VALUES ('', '$userPOST', '$passPOST', '$tipoPOST', '$fechaformat', 'no login', 'no login');";
 
-   //Si los datos se introducen correctamente, mostramos los datos
-   //Sino, mostramos un mensaje de error
-   if (mysqli_query($con, $consulta) && mysqli_query($con, $consulta2)) {
-       die('<script>swal({ title: "Bienvenido", text: "ahora ya puedes iniciar sesion", type: "success" }, function(){ window.location.href = "login.html"; });</script>');
-   } else {
-       die('Error de administración');
-   };
-}; //Fin comprobación if(empty($userPOST) || empty($passPOST))
 
-}else{
+    $consulta2 = "INSERT INTO clientes (nombre, apellidos, user_id) VALUES ('$nomPOST', '$apPOST', last_insert_id())";
+
+    if (mysqli_query($con, $consulta1)) {
+        if (mysqli_query($con, $consulta2)) {
+       echo '<script>swal({ title: "Bienvenido", text: "ahora ya puedes iniciar sesion", type: "success" }, function(){ window.location.href = "login.php"; });</script>';
+        } else {
+      echo '<script>swal({ title: "Ooops", text: "Algo salio mal", type: "error" }, function(){ window.location.href = "registro.html"; });</script>';
+         }
+      }
+      
+    } 
+
+     }
+} //Fin comprobación if(empty($userPOST) || empty($passPOST))
+else{
 echo "Las variables no estan definidas";
 }
-  }
 
 ?>
 

@@ -6,8 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="theme-color" content="#F5F5DC">
     <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
 
     <title>Tu cuenta-Yanet EScalona</title>
@@ -21,12 +20,8 @@
     <link rel="stylesheet" type="text/css" href="../../sweetalert/sweetalert.css">
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     <link rel="stylesheet" type="text/css" href="../../css/font-awesome.css">
-    <link rel="stylesheet" href="../../notification_menu/generate_notification_form/css/style.css">
-    <script type="text/javascript" src="../../sweetalert/sweetalert-dev.js"></script>
     <script type="text/javascript" src="../../js/jquery-2.1.1.min.js"></script>
-    <script src="../../notification_menu/generate_notification_form/js/jquery-ui-1.8.14.custom.min.js"></script>
-    <script src="../../notification_menu/generate_notification_form/js/ttw-notification-menu.js"></script>
-    <script src="../../js/jquery-notification-menu.js"></script>
+    <script type="text/javascript" src="../../sweetalert/sweetalert-dev.js"></script>
     <script type="text/javascript" src="../../js/dashboard.js"></script>
     <script src="../../js/highcharts/highcharts.js"></script>
     <script src="../../js/highcharts/highcharts-more.js"></script>
@@ -57,7 +52,7 @@
   closeOnConfirm: false
 },
 function(){
-  window.location.href='../usuarios/login.html';
+  window.location.href='../usuarios/login.php';
 }) </script>";
   exit;
   }
@@ -110,7 +105,7 @@ function(){
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true">&nbsp; Menu</i></a>
 						<i class="fa fa-envelope" aria-hidden="true" style="float:right; font-size:400%;"></i><br><br><br>
                         <div id="home">
                         <center><h3>Bienvenido</h3><h5 class="text-center"><?php echo $_SESSION['nom'];?></h5></center>
@@ -132,8 +127,8 @@ function(){
                                 <p>Este es un curso muy bueno</p><br>
                                 <span>Disfruta de las primeras 3 partes sin costo gracias a tu beca por aperturas</span><br>
                                 <a href="../cursos/dzslides/curso1-p1.php"><span>Parte 1</span></a><br>
-                                <a href=""><span>Parte 2</span></a><br>
-                                <a href=""><span>Parte 3</span></a><br><br>
+                                <a href="../cursos/dzslides/curso1-p2.php"><span>Parte 2</span></a><br>
+                                <a href="../cursos/dzslides/curso1-p2.php"><span>Parte 3</span></a><br><br>
                                 <a href="cart/index.php"><button class="btn btn-success">Comprar curso</button></a>
                               </div>
                               </div>

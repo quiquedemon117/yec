@@ -5,6 +5,7 @@
 <link rel="stylesheet" type="text/css" href="../../../asset/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="../../../sweetalert/sweetalert.css">
 <link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../../../css/font-awesome.css">
 <script src="../../../js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8" async defer></script>
 <script src="../../../asset/js/bootstrap.js" type="text/javascript" charset="utf-8" async defer></script>
 <script src="../../../sweetalert/sweetalert.min.js" type="text/javascript" charset="utf-8" async defer></script>
@@ -13,6 +14,7 @@
 <!-- Optional: on every page: header and footer -->
 
 <header>
+  <a href="../../clientes/clientes.php" title="Regresar a mi cuenta"><i class="fa fa-home" aria-hidden="true" style="float:left; font-size: 180%;"></i></a>
   Curso 1: Cansada y en pie de Guerra <br>
 </header>
 
@@ -21,9 +23,15 @@
 <!-- Your Slides -->
 <!-- One section is one slide -->
 
+<body>
+  <div>
+    <button type="button">Home</button>
+  </div>
+</body>
+
 <section>
 <figure> <!-- Videos are automatically played -->
-      <video src="../../../video/Yanet EScalona.mp4" poster="http://www.mozilla.org/images/about/poster.jpg"></video>
+      <video src="../../../video/Yanet EScalona.mp4"></video>
     </figure>
 </section>
 
@@ -136,7 +144,6 @@
 <!-- Define the style of your presentation -->
 
 <!-- Maybe a font from http://www.google.com/webfonts ? -->
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
 
 <style>
   html, .view body { background-color: black; counter-reset: slideidx; }

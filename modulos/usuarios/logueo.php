@@ -46,7 +46,7 @@ if (isset($_POST["user"]) && isset($_POST["pass"])) {
         }
     } else {
         echo '<script>swal("Oops", "El usuario o contraseña no son validos!", "error");</script>';
-        header("refresh:2.1 ;url=/yec/modulos/usuarios/login.html");
+        header("refresh:2.1 ;url=/yec/modulos/usuarios/login.php");
     }
 } else {
     echo "error las variables no estan definidas";
