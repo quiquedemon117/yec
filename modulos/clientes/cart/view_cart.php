@@ -7,6 +7,7 @@ setlocale(LC_MONETARY,"en_US"); // US national format (see : http://php.net/mone
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tienda de cursos</title>
 <link href="../cart/style/cart.css" rel="stylesheet" type="text/css">
 <link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon">
@@ -18,18 +19,20 @@ setlocale(LC_MONETARY,"en_US"); // US national format (see : http://php.net/mone
 a:hover{text-decoration:none;}
 a{text-decoration:none;}
 </style>
-<script type="text/javascript" src="../../../sweetalert/sweetalert.min.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../../sweetalert/sweetalert.min.js"></script>
 <script type="text/javascript" src="../../../asset/js/bootstrap.js"></script>
+<script src="js/checkout.js"></script>
 </head>
 <body>
-<center><br><img src='../../../images/logo.png' alt='' width='20%'></center>
-<h3 style="text-align:center">Resumen de compra</h3>
 <?php
+echo "<br>
+<h1 class='text-center'>Resumen de compra</h1>";
+
 if(isset($_SESSION["products"]) && count($_SESSION["products"])>0){
 	$total 			= 0;
 	$list_tax 		= '';
-	$cart_box 		= '<ul class="view-cart">';
+	$cart_box 		= '<ul class="view-cart h3">';
 
 	foreach($_SESSION["products"] as $product){ //Print each item, quantity and price.
 		$product_name = $product["product_name"];
@@ -41,15 +44,13 @@ if(isset($_SESSION["products"]) && count($_SESSION["products"])>0){
 		
 		$item_price 	= sprintf("%01.2f",($product_price * $product_qty));  // price x qty = total item price
 		
-		$cart_box 		.=  "<li>$product_name <span> $ . $item_price </span></li>";
+		$cart_box 		.=  "<li>$product_name <span>$ $item_price </span></li>";
 		
 		$subtotal 		= ($product_price * $product_qty); //Multiply item quantity * price
 		$total 			= ($total + $subtotal); //Add up to total price
 	}
 	
-	
-	$shipping_cost = ($total * 0.16);
-	$grand_total = $total + $shipping_cost; //grand total
+	$grand_total = $total; //grand total
 
 
 	foreach($taxes as $key => $value){ //list and calculate all taxes in array
@@ -62,11 +63,8 @@ if(isset($_SESSION["products"]) && count($_SESSION["products"])>0){
 		$list_tax .= $key. ' $'. sprintf("%01.2f", $value).'<br />';
 	}
 	
-	$shipping_cost = ($shipping_cost)?'IVA : $'. sprintf("%01.2f", $shipping_cost).'<br />':'';
-	
 	//Print Shipping, VAT and Total
-	$cart_box .= "<li class=\"view-cart-total\">Subtotal: $total <br>  $shipping_cost <hr>Total a pagar : $ ".sprintf("%01.2f", $grand_total)."<br><br><form action='https://www.paypal.com/mx/cgi-bin/webscr' method='post'><input type='hidden' name='cmd' value='_xclick'><input type='hidden' name='business' value='cristi_escalona@hotmail.com'><input type='hidden' name='item_name' value='Cursos'><input type='hidden' name='currency_code' value='MXN'><input type='hidden' name='amount' value='{$grand_total}'><input type='image' src='images/paypal.png' name='submit' alt='Make payments with PayPal - it's fast, free and secure!' width='30%'>
-</form></li>";
+	$cart_box .= "<li class=\"view-cart-total\">Total a pagar : $ ".sprintf("%01.2f", $grand_total)."<br><br><div id='paypal-button'></div></li>";
 	$cart_box .= "</ul>";
 	
 	
@@ -97,5 +95,41 @@ if(isset($_SESSION["products"]) && count($_SESSION["products"])>0){
   </div>
 </div>
 </body>
+  <script>
+    paypal.Button.render({
+      env: 'sandbox', // Or 'sandbox',
+
+      commit: true, // Show a 'Pay Now' button
+
+      style: {
+        color: 'gold',
+        size: 'small'
+      },
+
+      payment: function(data, actions) {
+        /* 
+         * Set up the payment here 
+         */
+      },
+
+      onAuthorize: function(data, actions) {
+        /* 
+         * Execute the payment here 
+         */
+      },
+
+      onCancel: function(data, actions) {
+        /* 
+         * Buyer cancelled the payment 
+         */
+      },
+
+      onError: function(err) {
+        /* 
+         * An error occurred during the transaction 
+         */
+      }
+    }, '#paypal-button');
+  </script>
 </html>
 

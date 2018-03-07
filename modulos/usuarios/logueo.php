@@ -33,7 +33,7 @@ if (isset($_POST["user"]) && isset($_POST["pass"])) {
             $data = mysqli_fetch_array($result);
             $_SESSION["user"] = $data["user"];
             /*echo"2";*/
-            header("refresh:0.1 ;url=/yec/modulos/admin/admin.php");
+            header("refresh:0.1 ;url=/modulos/admin/admin.php");
         } else {
             $_SESSION['loggedin'] = true;
             $_SESSION['user'] = $user;
@@ -42,11 +42,11 @@ if (isset($_POST["user"]) && isset($_POST["pass"])) {
             $data = mysqli_fetch_array($result);
             $_SESSION["user"] = $data["user"];
             /*echo "1";*/
-            header("refresh:0.1 ;url=/yec/modulos/clientes/clientes.php");
+            header("refresh:0.1 ;url=/modulos/clientes/clientes.php");
         }
     } else {
         echo '<script>swal("Oops", "El usuario o contraseña no son validos!", "error");</script>';
-        header("refresh:2.1 ;url=/yec/modulos/usuarios/login.php");
+        header("refresh:2.1 ;url=/modulos/usuarios/login.php");
     }
 } else {
     echo "error las variables no estan definidas";

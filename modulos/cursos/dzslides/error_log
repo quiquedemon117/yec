@@ -1,0 +1,18 @@
+[04-Oct-2017 16:24:32 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/yanetescalona85/public_html/modulos/cursos/dzslides/curso1-p1.php:318) in /home/yanetescalona85/public_html/modulos/cursos/dzslides/curso1-p1.php on line 319
+[04-Oct-2017 16:24:32 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/cursos/dzslides/curso1-p1.php on line 320
+[10-Nov-2017 18:59:51 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/yanetescalona85/public_html/modulos/cursos/dzslides/curso1-p1.php:318) in /home/yanetescalona85/public_html/modulos/cursos/dzslides/curso1-p1.php on line 319
+[10-Nov-2017 18:59:51 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/cursos/dzslides/curso1-p1.php on line 320
+[18-Dec-2017 19:09:06 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/yanetescalona85/public_html/modulos/cursos/dzslides/curso1-p1.php:318) in /home/yanetescalona85/public_html/modulos/cursos/dzslides/curso1-p1.php on line 319
+[18-Dec-2017 19:09:06 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/cursos/dzslides/curso1-p1.php on line 320
+[18-Dec-2017 19:11:08 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/yanetescalona85/public_html/modulos/cursos/dzslides/curso1-p1.php:318) in /home/yanetescalona85/public_html/modulos/cursos/dzslides/curso1-p1.php on line 319
+[18-Dec-2017 19:11:08 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/cursos/dzslides/curso1-p1.php on line 320
+[18-Dec-2017 19:11:58 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/yanetescalona85/public_html/modulos/cursos/dzslides/curso1-p1.php:318) in /home/yanetescalona85/public_html/modulos/cursos/dzslides/curso1-p1.php on line 319
+[18-Dec-2017 19:11:58 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/cursos/dzslides/curso1-p1.php on line 320
+[21-Dec-2017 22:53:57 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 22:53:57 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 22:54:10 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 22:54:10 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[22-Dec-2017 00:07:49 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[22-Dec-2017 00:07:49 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[27-Dec-2017 20:16:58 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[27-Dec-2017 20:16:58 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22

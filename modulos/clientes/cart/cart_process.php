@@ -10,7 +10,7 @@ if(isset($_POST["product_code"]))
 	}
 	
 	//we need to get product name and price from database.
-	$statement = $mysqli_conn->prepare("SELECT product_name, product_price FROM products_list WHERE product_code=? LIMIT 1");
+	$statement = $mysqli_conn->prepare("SELECT product_name, product_price FROM cursos WHERE product_code=? LIMIT 1");
 	$statement->bind_param('s', $new_product['product_code']);
 	$statement->execute();
 	$statement->bind_result($product_name, $product_price);

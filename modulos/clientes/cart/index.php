@@ -1,17 +1,23 @@
 <?php
 session_start(); //start session
 include("config.inc.php"); //include config file
+require('../../usuarios/sesion.php');
 ?>
 <!DOCTYPE HTML>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tienda de cursos</title>
-<link href="../cart/style/cart.css" rel="stylesheet" type="text/css">
-<link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="../../../sweetalert/sweetalert.css">
 <link rel="stylesheet" type="text/css" href="../../../asset/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="../../../asset/css/bootstrap-theme.css">
+<link href="../cart/style/cart.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../../../css/style.css">
+<link rel="stylesheet" type="text/css" href="../../../css/color/light-red.css">
+<link rel="stylesheet" type="text/css" href="../../../css/responsive.css">
+<link rel="stylesheet" type="text/css" href="../../../css/font-awesome.css">
 <style type="text/css">
 a:hover{text-decoration:none;}
 a{text-decoration:none;}
@@ -71,8 +77,11 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
+	<div class="container">
+		<div class="row">
 <div align="center">
-<h3>Cursos a la venta</h3>
+<a href="../../clientes/clientes.php"><img src="../../../images/logo.png" width="35%"></a><br>
+<h1>Cursos a la venta</h1>
 </div>
 
 <a href="#" class="cart-box" id="cart-info" title="Ver carrito de compras">
@@ -94,18 +103,22 @@ if(isset($_SESSION["products"])){
 
 <?php
 //List products from database
-$results = $mysqli_conn->query("SELECT product_name, product_desc, product_code, product_image, product_price FROM products_list");
+$results = $mysqli_conn->query("SELECT product_name, product_desc, product_code, product_image, product_price FROM cursos");
 //Display fetched records as you please
 
-$products_list =  '<ul class="products-wrp">';
+$cursos =  '<ul class="products-wrp">';
 
 while($row = $results->fetch_assoc()) {
-$products_list .= <<<EOT
+$product_desc = $row["product_desc"];
+$descuento = $row["product_price"];
+$preciof = 0.5*$row["product_price"];
+$cursos .= <<<EOT
 <li>
 <form class="form-item">
 <h4>{$row["product_name"]}</h4>
 <div><img src="images/{$row["product_image"]}"></div>
-<div>Precio : $ {$row["product_price"]}<div>
+<p class='precio-original'>$<del>{$descuento}</del></p>
+<h3>$ {$preciof}</h3><span class='success'>50% OFF</span>
 <div class="item-box">
     <div class="form-group hide">
 	<label>Color :</label>
@@ -115,6 +128,11 @@ $products_list .= <<<EOT
     <option value="Orange">Orange</option>
     </select>
 	</div>
+
+        <div class="form-group hide">
+    <label>Descripción :</label>
+        <input type="text" name="product_desc" value="{$product_desc}">
+    </div>
 	
 	<div class="form-group hide">
     <label>Qty :</label>
@@ -137,16 +155,71 @@ $products_list .= <<<EOT
 	</div>
 	
     <input name="product_code" type="hidden" value="{$row["product_code"]}">
-    <center><button type="submit" class="producto btn" precio="{$row["product_price"]} role="button">Agregar al carrito</button></center>
+    <center>
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="business" value="cristi_escalona@hotmail.com">
+<input type="hidden" name="lc" value="AL">
+<input type="hidden" name="item_name" value="CANSADA Y EN PIE DE GUERRA">
+<input type="hidden" name="item_number" value="{$row["product_code"]}">
+<input type="hidden" name="amount" value="150.00">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="button_subtype" value="products">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="add" value="1">
+<input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+<button type="submit" name="submit" class="producto btn" precio="{$row["product_price"]}" role="button">Agregar al carrito</button>
+</form>
+    </center>
 </div>
 </form>
 </li>
 EOT;
 
 }
-$products_list .= '</ul></div>';
+$cursos .= '</ul></div>';
 
-echo $products_list;
+echo $cursos;
 ?>
+<div class="container text-center">
+    <br>
+    <span class="label label-success">Los precios son en Dolares Americanos <span class="badge">(USD)</span></span>
+</div>
+</div>
+</div>
+        <footer class="style-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <span class="copyright h3">Contactanos</span><br>
+                        <i class="fa fa-phone-square copyright" aria-hidden="true" style="font-size: 100%;"></i>
+                        <span class="copyright h5">984-153-4811</span>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="footer-social text-center">
+                        	<span class="copyright h3">Formas de pago</span><br><br>
+                            <ul>
+                                <li><a href="#" title="Paypal"><i class="fa fa-paypal"></i></a></li>
+                                <li><a href="#" title="Visa"><i class="fa fa-cc-visa"></i></a></li>
+                                <li><a href="#" title="Mastercard"><i class="fa fa-cc-mastercard"></i></a></li>
+                                <li><a href="#" title="American Express"><i class="fa fa-cc-amex"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="footer-link text-center">
+                        	<span class="copyright h3">Ligas adicionales</span><br>
+                            <ul >
+                                <li><a href="#">Política de privacidad</a><br>
+                                </li>
+                                <li><a href="#">Terminos de uso</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
 </body>
 </html>

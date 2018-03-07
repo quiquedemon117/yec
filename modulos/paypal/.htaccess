@@ -1,0 +1,2 @@
+AuthName "paypal"
+AuthUserFile "/home/yanetescalona85/.htpasswds/public_html/modulos/paypal/passwd"

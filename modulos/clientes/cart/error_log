@@ -1,0 +1,150 @@
+[21-Jul-2017 23:40:30 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/yanetescalona85/public_html/modulos/clientes/cart/config.inc.php on line 15
+[28-Jul-2017 17:40:13 UTC] PHP Notice:  Undefined index: product_qty in /home/yanetescalona85/public_html/modulos/clientes/cart/cart_process.php on line 51
+[28-Jul-2017 17:40:13 UTC] PHP Notice:  Undefined index: product_color in /home/yanetescalona85/public_html/modulos/clientes/cart/cart_process.php on line 52
+[28-Jul-2017 17:40:13 UTC] PHP Notice:  Undefined index: product_size in /home/yanetescalona85/public_html/modulos/clientes/cart/cart_process.php on line 53
+[28-Jul-2017 17:40:30 UTC] PHP Notice:  Undefined index: product_qty in /home/yanetescalona85/public_html/modulos/clientes/cart/view_cart.php on line 36
+[28-Jul-2017 17:40:30 UTC] PHP Notice:  Undefined index: product_color in /home/yanetescalona85/public_html/modulos/clientes/cart/view_cart.php on line 39
+[28-Jul-2017 17:40:30 UTC] PHP Notice:  Undefined index: product_size in /home/yanetescalona85/public_html/modulos/clientes/cart/view_cart.php on line 40
+[28-Jul-2017 17:40:37 UTC] PHP Notice:  Undefined index: product_qty in /home/yanetescalona85/public_html/modulos/clientes/cart/cart_process.php on line 51
+[28-Jul-2017 17:40:37 UTC] PHP Notice:  Undefined index: product_color in /home/yanetescalona85/public_html/modulos/clientes/cart/cart_process.php on line 52
+[28-Jul-2017 17:40:37 UTC] PHP Notice:  Undefined index: product_size in /home/yanetescalona85/public_html/modulos/clientes/cart/cart_process.php on line 53
+[28-Jul-2017 17:40:37 UTC] PHP Notice:  Undefined index: product_qty in /home/yanetescalona85/public_html/modulos/clientes/cart/cart_process.php on line 51
+[28-Jul-2017 17:40:37 UTC] PHP Notice:  Undefined index: product_color in /home/yanetescalona85/public_html/modulos/clientes/cart/cart_process.php on line 52
+[28-Jul-2017 17:40:37 UTC] PHP Notice:  Undefined index: product_size in /home/yanetescalona85/public_html/modulos/clientes/cart/cart_process.php on line 53
+[28-Jul-2017 17:40:39 UTC] PHP Notice:  Undefined index: product_qty in /home/yanetescalona85/public_html/modulos/clientes/cart/cart_process.php on line 51
+[28-Jul-2017 17:40:39 UTC] PHP Notice:  Undefined index: product_color in /home/yanetescalona85/public_html/modulos/clientes/cart/cart_process.php on line 52
+[28-Jul-2017 17:40:39 UTC] PHP Notice:  Undefined index: product_size in /home/yanetescalona85/public_html/modulos/clientes/cart/cart_process.php on line 53
+[16-Nov-2017 14:53:27 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/yanetescalona85/public_html/modulos/clientes/cart/index.php on line 110
+[16-Nov-2017 14:53:47 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/yanetescalona85/public_html/modulos/clientes/cart/index.php on line 110
+[16-Nov-2017 14:56:10 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/yanetescalona85/public_html/modulos/clientes/cart/index.php on line 110
+[16-Nov-2017 14:59:03 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/yanetescalona85/public_html/modulos/clientes/cart/index.php on line 110
+[21-Dec-2017 22:57:03 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 22:57:03 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 22:57:03 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 22:57:03 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:07:49 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:07:49 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:07:56 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:07:56 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:00 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:00 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:01 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:01 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:01 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:01 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:01 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:01 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:01 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:01 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:01 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:01 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:02 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:02 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:02 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:02 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:02 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:02 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:03 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:03 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:03 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:03 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:03 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:03 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:03 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:03 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:03 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:03 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:03 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:03 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:04 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:04 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:04 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:04 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:04 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:04 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:04 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:04 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:04 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:04 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:05 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:05 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:05 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:05 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:05 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:05 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:05 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:05 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:06 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:06 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:06 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:06 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:07 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:07 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:07 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:07 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:07 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:07 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:07 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:07 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:08 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:08 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:08 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:08 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:08 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:08 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:08 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:08 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:08:09 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:08:09 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:11:32 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:11:32 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:12:14 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:12:14 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:12:21 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:12:21 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:16:29 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:16:29 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:16:35 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:16:35 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:16:35 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:16:35 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:35:06 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:35:06 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:35:13 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:35:13 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:36:20 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:36:20 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:36:21 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:36:21 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:36:27 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:36:27 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:36:29 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:36:29 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[21-Dec-2017 23:50:34 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 20
+[21-Dec-2017 23:50:34 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:51:05 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 20
+[21-Dec-2017 23:51:05 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:52:09 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 20
+[21-Dec-2017 23:52:09 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:53:35 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 20
+[21-Dec-2017 23:53:35 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[21-Dec-2017 23:53:38 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 20
+[21-Dec-2017 23:53:38 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[22-Dec-2017 00:00:52 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[22-Dec-2017 00:00:52 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[22-Dec-2017 00:00:53 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[22-Dec-2017 00:00:53 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[22-Dec-2017 02:25:04 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[22-Dec-2017 02:25:04 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[27-Dec-2017 01:11:27 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[27-Dec-2017 01:11:27 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[27-Dec-2017 01:11:31 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[27-Dec-2017 01:11:31 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[01-Mar-2018 23:49:51 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[01-Mar-2018 23:49:51 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[01-Mar-2018 23:50:37 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[01-Mar-2018 23:50:37 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[02-Mar-2018 00:03:00 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[02-Mar-2018 00:03:00 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22
+[02-Mar-2018 00:12:17 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 21
+[02-Mar-2018 00:12:17 UTC] PHP Notice:  Undefined variable: user in /home/yanetescalona85/public_html/modulos/usuarios/sesion.php on line 22

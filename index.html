@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#222">
-
-    <title>Yanet EScalona</title>
+    <title>Contador público &#124; Yanet EScalona</title>
+    <meta name="description" content="Contadora confiable y experta en captura contable para micro y macro empresas">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="fonts/custom/manzana/flaticon.css">
 
@@ -34,11 +34,6 @@
     <!-- Colors CSS -->
     <link rel="stylesheet" type="text/css" href="css/color/light-red.css">
     
-    
-    
-    <!-- Colors CSS -->
-    <link rel="stylesheet" type="text/css" href="css/color/light-red.css" title="light-red">
-    
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -60,10 +55,11 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- <a class="navbar-brand page-scroll" href="#page-top">Yanet EScalona</a> -->
-                <a href="#page-top"><img class="navbar-brand page-scroll" src="images/logo.png"></a>
+                <a href="#page-top"><img class="navbar-brand page-scroll" src="images/logo.png" alt="Yanet EScalona" title="Home"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navigation">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
@@ -85,6 +81,7 @@
                         <a class="page-scroll" href="modulos/usuarios/login.php">Iniciar sesion</a>
                     </li>
                 </ul>
+            </div>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -108,11 +105,11 @@
             <!-- Carousel inner -->
             <div class="carousel-inner">
                 <div class="item active">
+                        <div class="visible-xs" id="oculto1">
+                            <span>Curso Autoestimas<strong>«Cansada y en pie de Guerra»</strong>Novela Romántica 1ª Temporada</span>
+                        </div>
                     <img class="img-responsive" src="images/header-bg-1.jpg" alt="slider">
                     <div class="slider-content">
-                    	<div class="visible-xs-block">
-                    		Hola mundo
-                    	</div>
                         <div class="col-md-12 text-center">
                             <h5 class="animated3">
                                 <span>Curso Autoestimas<strong>«Cansada y en pie de Guerra»</strong>Novela Romántica 1ª Temporada</span>
@@ -131,6 +128,9 @@
                 <!--/ Carousel item end -->
                 
                 <div class="item">
+                    <div class="visible-xs" id="oculto2">
+                        <a href="#" data-toggle="modal" data-target="#miModal5"><span>Conociendo a <strong>la Gran Dama</strong></span></a>
+                        </div>
                     <img class="img-responsive" src="images/header-back.png" alt="slider">
                     
                     <div class="slider-content">
@@ -144,7 +144,7 @@
                             <span class="animated2 flaticon-manzana"></span><span class="animated2" style="font-size: 800%;">+</span>
                             <span class="animated2 flaticon-manzana"></span><span class="animated2" style="font-size: 800%;">=</span>
                             </div>
-                            <a class="animated3 slider btn btn-primary btn-min-block" href="#">Saber mas...</a>
+                            <a class="animated3 slider btn btn-primary btn-min-block" href="#" data-toggle="modal" data-target="#miModal5">Saber mas...</a>
                             <h5 class="animated1"><span><strong>Más fácil imposible</strong></span></h5>
                         </div>
                     </div>
@@ -152,6 +152,9 @@
                 <!--/ Carousel item end -->
                 
                 <div class="item">
+                        <div class="visible-xs" id="oculto3">
+                            <a href=modulos/usuarios/tuayudarasa.html><span>Proyecto <br><strong>Instituto Empresarial Castillos de Piedras.</strong></span></a>
+                        </div>
                     <img class="img-responsive" src="images/galaxy.jpg" alt="slider">
                     <div class="slider-content">
                         <div class="col-md-12 text-center">
@@ -163,7 +166,7 @@
                                 De ególatras a Humanitarios: <br>
                                 Porque estos líderes se preparan para la siguiente etapa.</p>
                             </div>  
-                             <button class="animated3 slider btn btn-primary btn-min-block" data-toggle="modal" data-target="#miModal" href="modulos/usuarios/tuayudarasa.html">Saber mas...</button>
+                             <a href=modulos/usuarios/tuayudarasa.html><button class="animated3 slider btn btn-primary btn-min-block">Saber mas...</button></a>
                                 
                         </div>
                     </div>
@@ -184,10 +187,6 @@
     </section>
 
     <!-- End Home Page Slider -->
-
-        <div class="visible-xs-block text-center" style="float: auto; position: relative;">
-                    		Hola mundo
-     </div>
     
     <!-- Start Feature Section -->
         <section id="feature" class="feature-section">
@@ -293,9 +292,7 @@
             </div><!-- /.container -->
         </section>
         <!-- End Feature Section -->
-    
-    
-    
+    <hr>
     <!-- Start Portfolio Modal Section -->
         <div class="section-modal modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-content">
@@ -305,25 +302,6 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title text-center">
-                            <h3>Portfolio Details</h3>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        
-                        <div class="col-md-6">
-                            <img src="images/portfolio/img1.jpg" class="img-responsive" alt="..">
-                        </div>
-                        <div class="col-md-6">
-                            <img src="images/portfolio/img1.jpg" class="img-responsive" alt="..">
-                        </div>
-                        
-                    </div><!-- /.row -->
-                </div>                
             </div>
         </div>
         <!-- End Portfolio Modal Section -->
@@ -344,7 +322,7 @@
                 
                 <a data-toggle="modal" data-target="#miModal2" href="#"><div class="col-md-4">
                     <div class="welcome-section text-center">
-                        <img src="images/llamas.jpg" class="img-responsive" alt=".."><br>
+                        <img src="images/llamas.jpg" class="img-responsive" alt="Curso 1" title="Tu valor y tu belleza emergen cuando llega ese momento"><br>
                         <div class="border"></div>
                         <h1>1</h1>
                     </div>
@@ -352,7 +330,7 @@
                 
                 <a data-toggle="modal" data-target="#miModal3" href="#"><div class="col-md-4">
                     <div class="welcome-section text-center">
-                        <img src="images/llamas2.jpg" class="img-responsive" alt=".."><br>
+                        <img src="images/llamas2.jpg" class="img-responsive" alt="Curso 2" title="Lo que te manitiene pobre no es la falta de dinero, si no el ser displicente"><br>
                         <div class="border"></div>
                         <h1>2</h1>
                     </div>
@@ -360,7 +338,7 @@
                 
                 <a data-toggle="modal" data-target="#miModal4" href="#"><div class="col-md-4">
                     <div class="welcome-section text-center">
-                        <img src="images/about-03.jpg" class="img-responsive" alt=".."><br>
+                        <img src="images/about-03.jpg" class="img-responsive" alt="Proximamente" title="Proximamente"><br>
                         <div class="border"></div>
                         <h1>3</h1>
                     </div>
@@ -381,9 +359,9 @@
                 <!-- Testimonial 1 -->
                 <div class="testimonials item">
                     <div class="testimonial-content">
-                        <img src="images/testimonial/face_1.png" alt="" >
+                        <img src="images/testimonial/face_1.png" alt="Contador público" title="Lic. Janet Escalona Cruz">
                         <div class="testimonial-author">
-                            <div class="author">Lic. C. Janet Escalona Cruz</div>
+                            <div class="author"><h1 style="font-family: Open Sans;">Lic. C. Yanet Escalona</h1></div>
                             <div class="designation">Presidenta y co-fundadora</div>
                         </div>
                     </div>
@@ -394,7 +372,7 @@
                         <div class="testimonial-author">
                             <div class="author" style="font-size: 300%; font-family: 'Times New Roman';">MI APOYO TOTAL</div>
                         </div>
-                        <img src="images/testimonial/face_3.png" alt="" >
+                        <img src="images/testimonial/face_3.png" alt="Pareja" title="Mi esposo">
                     </div>
                 </div>
             </div>
@@ -420,20 +398,20 @@
                 <div class="clients">
                     
                     <div class="col-md-12 center-block">
-                        <img src="images/logos/Audrei.jpeg" class="img-responsive" alt="...">
+                        <img src="images/logos/Audrei.jpeg" class="img-responsive" alt="empresa 1" title="Andrei">
                     </div>
                     
                     <div class="col-md-12 center-block">
-                        <img src="images/logos/lacaceria.jpg" class="img-responsive" alt="...">
+                        <img src="images/logos/lacaceria.jpg" class="img-responsive" alt="empresa 2" title="La caceria">
                     </div>
                     
                     <div class="col-md-12 center-block">
-                        <img src="images/logos/troquel_Centro.jpg" class="img-responsive" alt="...">
+                        <img src="images/logos/troquel_Centro.jpg" class="img-responsive" alt="empresa 3" title="Troquel Centro">
                     </div>
                     
                     <div class="col-md-12 center-block">
                     <br><br><br><br>
-                        <img src="images/logos/Web.jpeg" class="img-responsive" alt="..." width="200%">
+                        <img src="images/logos/Web.jpeg" class="img-responsive" alt="empresa 4" width="200%" title="WebDevalor">
                     </div>
 
                 </div>
@@ -494,14 +472,14 @@
                         <h4>Información de contacto</h4>
                         <ul>
                             <li><strong>E-mail :</strong> contacto@controlseguridadyalegria.com</li>
-                            <li><strong>Whatsapp :</strong> +52 9841534811</li>
+                            <li><strong>Whatsapp :</strong> 984-153-4811</li>
                             <li><strong>Web :</strong> www.controlseguridadyalegria.com</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-4 col-md-offset-4">
                     <div class="footer-contact-info">
-                        <h4>Horario de trabajo</h4>
+                        <h4>Horario de atención</h4>
                         <ul>
                             <li><strong>Lunes-Viernes:</strong> 9 am a 5 pm</li>
                             <li><strong>Sabados:</strong> 9 am to 3 pm</li>
@@ -568,7 +546,7 @@
                 <p>Te presento a «la gran Dama Jactanciosa» “La contabilidad” Ella no olvida nada, es cruel sin sentido del humor, es perfecta, e Imponente donde se planta, quienes la frecuentan son personas inalterables, juiciosas y la toman con tal Importancia como si fuera una Deidad, pues, en realidad es una Gran celebridad, sin ella ninguna empresa puede sobrevivir por mucho tiempo, si quieres entenderla tienes que conocer su historia, el motivo por el cual ella “la Gran Dama” es así, acceder a ella será más fácil si sabes cómo especula.</p>
                 <p>Por tal motivo no te sientas frustrada si al principio te Impone terror, pues una vez que la conozcas sabrás que te ayudará en gran manera, pues las apariencias engañar, ya que “la Gran Dama” en su interior Cuida de ti, de tu patrimonio, tranquiliza tus finanzas, te alerta si está por venir una catástrofe, y te motiva a buscar una solución antes de la ruina.</p>
                 <p>En este curso podrás apartar esas frustraciones e iniciar una relación con “La Gran Dama” que te favorecerá y empoderará, pues el conocimiento es Poder.</p>
-                <a href="modulos/usuarios/login.html"><button class="animated3 slider btn btn-primary btn-min-block">Quiero inscribirme</button></a>
+                <a href="modulos/usuarios/login.php"><button class="animated3 slider btn btn-primary btn-min-block">Quiero inscribirme</button></a>
             </div>
         </div>
     </div>
@@ -594,7 +572,7 @@ Si tú quieres, si realmente quieres puedes hacer algo por ti, me imagino que de
 Si tú decides continuar, debes tener paciencia contigo misma, respeta tus tiempos, sana tus heridas con amor, y sobre todo ámate.<br>
 ¿Estás lista?</p><br>
 </div>
-                <a href="modulos/usuarios/login.html"><button class="animated3 slider btn btn-primary btn-min-block">Quiero inscribirme</button></a>
+                <a href="modulos/usuarios/login.php"><button class="animated3 slider btn btn-primary btn-min-block">Quiero inscribirme</button></a>
             </div>
         </div>
     </div>
@@ -616,7 +594,7 @@ Si tú decides continuar, debes tener paciencia contigo misma, respeta tus tiemp
             “El éxito” es ese caballero, su Esmoquin es “el talento”, Ese caballero sólo se deja seducir por “la Persistencia” es una Dama que luce un encantador Vestido Rojo “el estudio”.
             </p><br>
 </div>
-                <a href="modulos/usuarios/login.html"><button class="animated3 slider btn btn-primary btn-min-block">Quiero inscribirme</button></a>
+                <a href="modulos/usuarios/login.php"><button class="animated3 slider btn btn-primary btn-min-block">Quiero inscribirme</button></a>
             </div>
         </div>
     </div>
@@ -647,12 +625,77 @@ Si tú decides continuar, debes tener paciencia contigo misma, respeta tus tiemp
     La actitud, palabras y gestos con justa razón, enfocados en la dirección desacertada.
     Siendo un tesoro Invaluable si descubres la dirección correcta.</p>
                 </div>
-                <a href="modulos/usuarios/login.html"><button class="animated3 slider btn btn-primary btn-min-block">Quiero inscribirme</button></a>
+                <a href="modulos/usuarios/login.php"><button class="animated3 slider btn btn-primary btn-min-block">Quiero inscribirme</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="miModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel"><strong style="color: #FF432E;">La gran Dama</strong>
+            </div>
+            <div class="modal-body text-center">
+            <h3>Elimina tus frustraciones, Contabilidad básica</h3>
+
+                <a href="modulos/usuarios/login.php"><button class="animated3 slider btn btn-primary btn-min-block">Quiero inscribirme</button></a>
             </div>
         </div>
     </div>
 </div>
 <!-- ventana modal -->
+
+<!--//BLOQUE COOKIES-->
+<div id="barraaceptacion" style="display: block; padding: 10px;">
+    <div class="inner">
+        Este sitio web utiliza cookies, tanto propias como de terceros, para mejorar nuestros servicios, recopilar información estadística y mostrarle publicidad relacionada con sus preferencias, generada a partir de sus pautas de navegación. Si continúa navegando, consideramos que acepta su uso.
+        <a href="javascript:void(0);" class="ok" onclick="PonerCookie();"><br><button type="text" class="btn btn-warning btn-xs">Aceptar</button></a> | 
+        <a href="http://es.technologyreview.com/emtech/mexico/14/politica-cookies/" target="_blank" class="info">Más información</a>
+    </div><br><br><br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+</div>
+</div>
+</div>
+<script>
+function getCookie(c_name){
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1){
+        c_start = c_value.indexOf(c_name + "=");
+    }
+    if (c_start == -1){
+        c_value = null;
+    }else{
+        c_start = c_value.indexOf("=", c_start) + 1;
+        var c_end = c_value.indexOf(";", c_start);
+        if (c_end == -1){
+            c_end = c_value.length;
+        }
+        c_value = unescape(c_value.substring(c_start,c_end));
+    }
+    return c_value;
+}
+ 
+function setCookie(c_name,value,exdays){
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+}
+ 
+if(getCookie('tiendaaviso')!="1"){
+    document.getElementById("barraaceptacion").style.display="block";
+}
+function PonerCookie(){
+    setCookie('tiendaaviso','1',365);
+    document.getElementById("barraaceptacion").style.display="none";
+}
+</script>
+<!--//FIN BLOQUE COOKIES-->
     
 
     <!-- jQuery Version 2.1.1 -->

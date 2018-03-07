@@ -1,6 +1,5 @@
 {
     "require": {
-        "phpmailer/phpmailer": "^6.0",
-        "paypal/rest-api-sdk-php": "^1.12"
+        "phpmailer/phpmailer": "^6.0"
     }
 }

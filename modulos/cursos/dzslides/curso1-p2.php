@@ -1,3 +1,7 @@
+<?php 
+session_start();
+require('../../usuarios/sesion.php');
+?>
 <!DOCTYPE html>
 
 <meta charset="utf-8">
@@ -337,7 +341,7 @@
   closeOnConfirm: false
 },
 function(){
-  window.location.href='../../../modulos/usuarios/login.html';
+  window.location.href='../../../modulos/usuarios/login.php';
 }) </script>";
   exit;
   }
@@ -348,7 +352,7 @@ function(){
   session_destroy();
    
   echo "Su sesion a terminado,
-  <a href='../usuarios/login.html'>Necesita iniciar sesion</a>";
+  <a href='../usuarios/login.php'>Necesita iniciar sesion</a>";
   exit;
   }
 ?>

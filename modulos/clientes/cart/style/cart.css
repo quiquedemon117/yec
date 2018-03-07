@@ -1,7 +1,7 @@
 body {
-	background-color: #F5F5DC;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	text-decoration:none;  
+	background-color: #F5F5F5;
+	text-decoration:none;
+	font-family: "Proxima Nova",Helvetica,Arial,sans-serif;  
 }
 
 ul.products-wrp {
@@ -10,9 +10,18 @@ ul.products-wrp {
 	max-width: 950px;
 	margin-left: auto;
 	margin-right: auto;  
-	color: #777;  
+	color: #333;  
 	text-align: center;
 }
+
+ul.products-wrp span{
+	color:green;
+}
+
+ul.products-wrp p.precio-original{
+	color:#AEB5BF;
+}
+
 ul.products-wrp li{
 	display: inline-block;
 	border: 1px solid #ECECEC;
@@ -35,6 +44,7 @@ ul.products-wrp li .item-box{
 }
 ul.products-wrp li .item-box div{
 	margin-bottom:5px;
+	color: #41FE96;
 }
 ul.products-wrp li .item-box button{
 	margin-left: 5px;

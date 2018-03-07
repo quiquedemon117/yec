@@ -1,3 +1,7 @@
+<?php 
+session_start();
+require('../usuarios/sesion.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,36 +41,7 @@
 </head>
 
 <body>
-<?php
-   session_start();
-   $_SESSION['user'] = $user;
-   if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-   } else {
-      echo "<script> swal({
-  title: 'No puedes entrar aqui',
-  text: '¡Debes iniciar sesion primero!',
-  type: 'warning',
-  showCancelButton: true,
-  confirmButtonColor: '#DD6B55',
-  confirmButtonText: 'Iniciar sesion!',
-  closeOnConfirm: false
-},
-function(){
-  window.location.href='../usuarios/login.php';
-}) </script>";
-  exit;
-  }
-   
-  $now = time();
-   
-  if($now > $_SESSION['expire']) {
-  session_destroy();
-   
-  echo "Su sesion a terminado,
-  <a href='../usuarios/login.html'>Necesita iniciar sesion</a>";
-  exit;
-  }
-  ?>
+
     <div id="wrapper">
 
         <!-- Sidebar -->
@@ -90,7 +65,7 @@ function(){
                     <a  href="#" onclick="progreso();">Progreso</a>
                 </li>
                 <li>
-                    <a  href="#" onclick="contactos();">Contacto</a>
+                    <a  href="#" onclick="contactos();">Captura contable</a>
                 </li>
                 <li>
                     <a href="../usuarios/logout.php">Cerrar sesion</a>
@@ -156,12 +131,7 @@ function(){
                          </div>
 
                          <div id="contacto">
-                         	<p>Lorem ipsum dolor sit amet, cdfvansectetur adipisicing elit, sed do eiusmod
-                         	tempor incididunt ut laadfvabore et dolore magndfv aliqua. Ut enim ad minim veniam,
-                         	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                         	consequat. Ddfvuiadfvas aute irure dolor inadfv reprehenderit in voluptate velit esse
-                         	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                         	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                              <div id="div-results"></div>
                          </div>
                     </div>
                 </div>

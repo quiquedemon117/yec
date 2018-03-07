@@ -1,3 +1,7 @@
+<?php 
+session_start();
+require('../../usuarios/sesion.php');
+?>
 <!DOCTYPE html>
 
 <meta charset="utf-8">
@@ -322,36 +326,7 @@
 -->
 
 <div id="progress-bar"></div>
-<?php
-   session_start();
-   $_SESSION['user'] = $user;
-   if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-   } else {
-      echo "<script> swal({
-  title: 'No puedes entrar aqui',
-  text: '¡Debes iniciar sesion primero!',
-  type: 'warning',
-  showCancelButton: true,
-  confirmButtonColor: '#DD6B55',
-  confirmButtonText: 'Iniciar sesion!',
-  closeOnConfirm: false
-},
-function(){
-  window.location.href='../../../modulos/usuarios/login.html';
-}) </script>";
-  exit;
-  }
-   
-  $now = time();
-   
-  if($now > $_SESSION['expire']) {
-  session_destroy();
-   
-  echo "Su sesion a terminado,
-  <a href='../usuarios/login.html'>Necesita iniciar sesion</a>";
-  exit;
-  }
-?>
+
 <!-- Default Style -->
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }

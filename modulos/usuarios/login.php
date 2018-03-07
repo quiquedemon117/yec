@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#B9090B">
+    <meta name="description" content="Ven y comienza a conocer los beneficios de ser parte de Yanet EScalona">
     <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon"> 
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     <link rel="stylesheet" type="text/css" href="../../asset/css/bootstrap.css">
@@ -21,9 +22,9 @@
 <body>
 <div class="container">
 <div class="row main">
-  <div class="login-form col-md-offset-4 col-md-4 col-xs-12 col-sm-offset-4 col-sm-4 col-lg-offset-4 col-lg-4">
+  <div class="login-form col-md-offset-4 col-md-4">
   <form method="post" action="logueo.php" id="form">
-     <a href="../../index.html"><img src="../../images/logo.png" width="100%"></a><br>
+     <a href="../../index.html"><img src="../../images/logo.png" width="100%" alt="Yanet EScalona" title="Home"></a><br>
      <div class="form-group ">
        <input type="text" class="form-control" name="user" placeholder="Usuario" id="user"  required>
        <i class="fa fa-user"></i>
